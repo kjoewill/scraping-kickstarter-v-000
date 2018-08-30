@@ -3,7 +3,8 @@ require 'pry'
 
 def create_project_hash
   
-  doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
+  html = File.read('fixtures/kickstarter.html')
+  
  
   binding.pry
 end
